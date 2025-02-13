@@ -2,7 +2,7 @@ using BenchmarkDotNet.Attributes;
 
 namespace ConsoleApp1;
 
-public class CountPennys
+public class TinyImprovements
 {
     public enum TestEnum
     {
@@ -11,7 +11,7 @@ public class CountPennys
         AnotherData = 2
     }
 
-    public CountPennys()
+    public TinyImprovements()
     {
         value = 0;
         value1 = (TestEnum)1;

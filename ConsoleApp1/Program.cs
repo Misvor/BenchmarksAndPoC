@@ -42,65 +42,65 @@ public class Program
 //         dataNext = 2
 //     }
 
-    static void Main(string[] args)
-    {
-        var first = new List<string>()
-        {
-            "123",
-            "123",
-            "123",
-            "123",
-            "123",
-            "123",
-            "345",
-            "456"
-        };
-        var second = new List<string>()
-        {
-            "23",
-            "45",
-            "56"
-        };
-        var third = new List<string>()
-        {
-            "12",
-            "34",
-            "45"
-        };
-
-        var intersect = GetIntersection(new List<List<string>>()
-        {
-            first, second, third
-        });
-
-        Console.ReadLine();
-
-
-
-
-        // //AClass.UsingLocalVariablesInTheCallbackCode(10);
-        //
-        // //var something = JsonConvert.DeserializeObject<AClass>(String.Empty);
-        // //var somethingNext = JsonConvert.DeserializeObject<AClass>(null);
-        //
-        // // Task task = DemoCompleteAsync();
-        // // Console.WriteLine("Method returned");
-        // // task.Wait();
-        // // Console.WriteLine("Task completed");
-        // // var list = new List<int>();
-        // // object obj = list;
-        //
-        // var dict = new Dictionary<string, string>()
-        // {
-        //     {"1", "123"},
-        //     {"2", "12333"}
-        // };
-        //
-        // var someResult = dict.TryGetValue("3", out var data);
-        // Console.WriteLine(data);
-        // Console.ReadKey();
-        //
-    }
+    // static void Main(string[] args)
+    // {
+    //     var first = new List<string>()
+    //     {
+    //         "123",
+    //         "123",
+    //         "123",
+    //         "123",
+    //         "123",
+    //         "123",
+    //         "345",
+    //         "456"
+    //     };
+    //     var second = new List<string>()
+    //     {
+    //         "23",
+    //         "45",
+    //         "56"
+    //     };
+    //     var third = new List<string>()
+    //     {
+    //         "12",
+    //         "34",
+    //         "45"
+    //     };
+    //
+    //     var intersect = GetIntersection(new List<List<string>>()
+    //     {
+    //         first, second, third
+    //     });
+    //
+    //     Console.ReadLine();
+    //
+    //
+    //
+    //
+    //     // //AClass.UsingLocalVariablesInTheCallbackCode(10);
+    //     //
+    //     // //var something = JsonConvert.DeserializeObject<AClass>(String.Empty);
+    //     // //var somethingNext = JsonConvert.DeserializeObject<AClass>(null);
+    //     //
+    //     // // Task task = DemoCompleteAsync();
+    //     // // Console.WriteLine("Method returned");
+    //     // // task.Wait();
+    //     // // Console.WriteLine("Task completed");
+    //     // // var list = new List<int>();
+    //     // // object obj = list;
+    //     //
+    //     // var dict = new Dictionary<string, string>()
+    //     // {
+    //     //     {"1", "123"},
+    //     //     {"2", "12333"}
+    //     // };
+    //     //
+    //     // var someResult = dict.TryGetValue("3", out var data);
+    //     // Console.WriteLine(data);
+    //     // Console.ReadKey();
+    //     //
+    // }
     public static IEnumerable<T> GetIntersection<T>(IEnumerable<IEnumerable<T>> input)
     {
         var allData = new List<T>();
@@ -136,6 +136,8 @@ public class Program
     //static void Main(string[] args) => BenchmarkRunner.Run<FromUnixConverter>();
     //static void Main(string[] args) => BenchmarkRunner.Run<OddOrEven>();
     //static void Main(string[] args) => BenchmarkRunner.Run<BadJsonConverter>();
+    //static void Main(string[] args) => BenchmarkRunner.Run<CheckIfNumber>();
+    static void Main(string[] args) => BenchmarkRunner.Run<FrozenDict>();
     //static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
     //class C
     //{
