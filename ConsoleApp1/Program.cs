@@ -25,17 +25,17 @@ public class Program
     //     string b = "xyz";
     // }
     
-// static void Main(string[] args)
-//     {
-//         CheckDefaultEnum? defaultData = default(CheckDefaultEnum);
-//         Console.WriteLine(defaultData);
-//
-//         defaultData = null;
-//         Console.WriteLine(defaultData);
-//         Console.WriteLine(defaultData ?? CheckDefaultEnum.data);
-//         
-//         Console.ReadLine();
-//     }
+static void Main(string[] args)
+    {
+        // CheckDefaultEnum? defaultData = default(CheckDefaultEnum);
+        // Console.WriteLine(defaultData);
+        //
+        // defaultData = null;
+        // Console.WriteLine(defaultData);
+        // Console.WriteLine(defaultData ?? CheckDefaultEnum.data);
+        //
+        Console.ReadLine();
+    }
 //     private enum CheckDefaultEnum
 //     {
 //         data = 1,
@@ -137,7 +137,7 @@ public class Program
     //static void Main(string[] args) => BenchmarkRunner.Run<OddOrEven>();
     //static void Main(string[] args) => BenchmarkRunner.Run<BadJsonConverter>();
     //static void Main(string[] args) => BenchmarkRunner.Run<CheckIfNumber>();
-    static void Main(string[] args) => BenchmarkRunner.Run<FrozenDict>();
+    //static void Main(string[] args) => BenchmarkRunner.Run<FrozenDict>();
     //static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
     //class C
     //{

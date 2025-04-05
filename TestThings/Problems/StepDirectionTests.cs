@@ -9,7 +9,7 @@ public class StepDirectionTests
     [DynamicData(nameof(AdditionalData), DynamicDataSourceType.Method)]
     public void TestStepByStep(int?[] firstNode, int start, int dest, string expResult)
     {
-        var executor = new StepDirections();
+        var executor = new StepDirectionsTree();
 
         var Node = TestHelper.CreateNode(firstNode, 0);
 

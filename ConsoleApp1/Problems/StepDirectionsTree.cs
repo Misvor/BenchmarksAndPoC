@@ -2,7 +2,7 @@ using System.Text;
 
 namespace ConsoleApp1.Problems;
 
-public class StepDirections
+public class StepDirectionsTree
 {
     public string GetDirections(TreeNode root, int startValue, int destValue) {
         var pathToStart = DFS(root, startValue);
