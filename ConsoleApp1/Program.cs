@@ -138,6 +138,7 @@ static void Main(string[] args)
     //static void Main(string[] args) => BenchmarkRunner.Run<BadJsonConverter>();
     //static void Main(string[] args) => BenchmarkRunner.Run<CheckIfNumber>();
     //static void Main(string[] args) => BenchmarkRunner.Run<FrozenDict>();
+    //static void Main(string[] args) => BenchmarkRunner.Run<AnyVsCountZero>();
     //static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
     //class C
     //{
