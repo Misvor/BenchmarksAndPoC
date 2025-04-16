@@ -24,4 +24,20 @@ public class PowerfulNumbersProblemTests
         Assert.AreEqual(result, actual);
     }
 
+    private long FastPower(long number, long power)
+    {
+        long result = 1;
+        var multiplier = 1;
+        while (power > 0)
+        {
+            if ((power & 1) == 1)
+            {
+                result *= multiplier;
+            }
+            multiplier *= multiplier;
+            power >>= 1;
+        }
+        return result;
+    }
+
 }

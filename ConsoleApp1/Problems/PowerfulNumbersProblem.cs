@@ -7,6 +7,25 @@ public class PowerfulNumbersProblem
         var result = CountPowerful(finish, limit, s) - CountPowerful(start -1, limit, s);
         return result;
     }
+    public int CountSymmetricIntegers(int low, int high) {
+        
+        var count = 0;
+        for(var i = low; i < high; i++)
+        {
+            var str = i.ToString();
+            if (str.Length % 2 != 0)
+            {
+                continue;
+            }
+            var length = str.Length / 2;
+            
+            if(str[length..].Sum(x => x) ==  str[..length].Sum(x => x))
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 
     private long CountPowerful(long end, int limit, string s)
     {
